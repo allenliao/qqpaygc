@@ -1,0 +1,226 @@
+﻿{{template "base/base.html" .}}
+{{define "head"}}
+{{end}}
+{{define "content"}}
+    <section class="wrapper">            
+              <!--overview start-->
+			  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-laptop"></i>Grand Suite</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="fa fa-laptop"></i>Grand Suite</li>						  	
+					</ol>
+				</div>
+			</div>
+              
+            <div class="row">
+
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                                預測建議
+                        </header>
+                        <div class="panel-body" id="suggestionList">
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="info-box green-bg">
+                                    <i class="fa">和</i>
+                                    <div class="title">第<span>8</span>桌建议押</div>	
+                                    <div class="count">正確率：<span>40.36</span>%</div>
+                                    <div class="count">状态：<span>未跟注</span> (点击改变状态)</div>        
+                                </div><!--/.info-box-->			
+                            </div><!--/.col-->
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="info-box red-bg">
+                                    <i class="fa">庄</i>
+                                    <div class="title">第<span>2</span>桌建议押</div>	
+                                    <div class="count">正確率：<span>77.36</span>%</div>
+                                    <div class="count">状态：<span>未跟注</span> (点击改变状态)</div>        
+                                </div><!--/.info-box-->			
+                            </div><!--/.col-->
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="info-box blue-bg">
+                                    <i class="fa">闲</i>
+                                    <div class="title">第<span>1</span>桌建议押</div>	
+                                    <div class="count">正確率：<span>65.22</span>%</div>
+                                    <div class="count">状态：<span>已跟注</span> (点击改变状态)</div>        
+                                </div><!--/.info-box-->			
+                            </div><!--/.col-->
+
+                        </div><!--/.panel-body suggestionList-->
+                    </section>
+
+                   
+                    <section class="panel">
+                        <header class="panel-heading">
+                            跟注历史记录
+                        </header>
+                        <div class="panel-body">
+                            <table class="table table-striped table-advance table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th><i class="icon_profile"></i> 局號</th>
+                                            <th><i class="icon_calendar"></i> 時間</th>
+                                            <th><i class="icon_pin_alt"></i> 下注金額</th>
+                                            <th><i class="icon_wallet_alt"></i> 帳戶金額</th>
+                                            <th><i class="icon_documents"></i>建議注別</th>
+                                            <th><i class="icon_cogs"></i> 預測結果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Angeline Mcclain</td>
+                                            <td>2004-07-06</td>
+                                            <td>dale@chief.info</td>
+                                            <td>Rosser</td>
+                                            <td>176-026-5992</td>
+                                            <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sung Carlson</td>
+                                            <td>2011-01-10</td>
+                                            <td>ione.gisela@high.org</td>
+                                            <td>Robert Lee</td>
+                                            <td>724-639-4784</td>
+                                            <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-success" href="#"><i class="icon_check_alt2"></i></a>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bryon Osborne</td>
+                                            <td>2006-10-29</td>
+                                            <td>sol.raleigh@language.edu</td>
+                                            <td>York</td>
+                                            <td>180-456-0056</td>
+                                            <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                                        
+                                    </tbody>
+                            </table>
+                        </div><!--/.panel-body Histiory Table-->
+                    </section>
+                    
+
+                </div><!--/.col -->
+
+                
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              跟注设定
+                          </header>
+                          <div class="panel-body">
+                              <form role="form">
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">帐户金额</label>
+                                      <input type="email" class="form-control" id="balance" placeholder="帐户金额">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">底注金额</label>
+                                      <input type="email" class="form-control" id="baseBet" placeholder="底注金额">
+                                  </div>
+                                  
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-check-circle"></i> 模拟开始</button>
+                                  <button type="button" class="btn btn-danger"><i class="fa fa-exclamation-triangle"></i> 模拟重啟</button>
+
+                                  <div class="checkbox">
+                                      <label>
+                                          <input id="autoBet" type="checkbox"> 自动跟注
+                                      </label>
+                                  </div>
+                              </form>
+
+                          </div><!--/panel-body-->
+                      </section>
+                </div><!--/.col form-->
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <section class="panel">
+                          <header class="panel-heading">
+                              跟注统计
+                          </header>
+                          <div class="panel-body">
+                                <div>
+                                    <div class="social-box winlosecount">
+                                        <i>胜/负次数</i>
+                                        <ul>
+                                            <li>
+                                                <strong>98</strong>
+                                                <span>胜</span>
+                                            </li>
+                                            <li>
+                                                <strong>60</strong>
+                                                <span>平</span>
+                                            </li>
+                                            <li>
+                                                <strong>88</strong>
+                                                <span>负</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--/social-box-->
+                                </div><!--/col-->
+
+                                <div>
+                                    <div class="social-box betamountcount">
+                                        <i>累计下注金额</i>
+                                        <ul>
+                                            <li>
+                                                <strong>962</strong>
+                                                <span>累计下注金额</span>
+                                            </li>
+                                            <li>
+                                                <strong>256</strong>
+                                                <span>累计胜负金额</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--/social-box-->			
+                                </div><!--/col-->
+
+                                <div>
+                                    <canvas id="betamountChart" height="300" width="500"></canvas>		
+                                </div><!--/col-->
+                            </div><!--/panel-body-->
+                      </section>
+                </div><!--/.col statistic-->
+			
+			</div><!--/.row-->
+		
+			
+   
+            
+		  
+		  <!-- Today status end -->
+			
+              
+				
+			<div class="row">
+               	
+            </div>
+
+                    
+                   
+        <!-- statics end -->
+              
+      
+              </div><br><br>
+		
+
+   
+{{end}}
+
+{{define "customjs"}}
+    <script src="static/js/betsuggest.js"></script>
+{{end}}
